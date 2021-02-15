@@ -1,0 +1,31 @@
+.title {
+  font-weight: bold;
+  color: #ec058c;
+  margin-bottom: 1.5rem;
+}
+
+.title::after {
+  display: block;
+  content: "";
+  width: 100px;
+  padding-top: 5px;
+  border-bottom: 7px solid #ec058c;
+}
+
+.description {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  color: #777;
+}
+
+.animation-container {
+  position: relative;
+  width: 100%;
+  padding-bottom: 65%;
+}
+
+.animation-container img,
+.animation-container svg {
+  position: absolute;
+  height: auto;
+}

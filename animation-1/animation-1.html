@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+    integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="animation-1.css">
+  <title>Animation 1</title>
+</head>
+
+<body>
+  <main class="container">
+    <div class="row align-items-center" style="height: 100vh;">
+      <div class="col">
+        <h1 class="title">Be informed</h1>
+        <p class="description">Predictive hiring. A scan analysis of the job market and the number of potential candidates.<br>
+          Predict the changes of success before you start hiring.</p>
+      </div>
+      <div class="col d-flex align-items-center">
+
+        <div class=" animation-container">
+          <img src="assets/notebook.svg" alt="notebook" id="anim-notebook" style="width: 82%; left: 10%; top: 20%;">
+          <img src="assets/pink-wheel.svg" alt="pink-wheel" id="anim-pink-wheel" style="width: 12%; left: 4%; top: 39%;">
+          <img src="assets/gray-wheel.svg" alt="gray-wheel" id="anim-gray-wheel" style="width: 20%; left: 2%; top: 50%; transform: rotate(20deg);">
+
+          <img src="assets/graph-1.svg" alt="graph-1" id="anim-graph-1" style="width: 20%; left: 23%; top: 40%; transform: scale(0);">
+          <img src="assets/graph-2.svg" alt="graph-2" id="anim-graph-2" style="width: 26%; left: 55%; top: 35%; transform: scale(0);">
+
+          <img src="assets/magnifier.svg" alt="magnifier" id="anim-magnifier" style="width: 17%; left: 69%; top: 10%; transform: scale(0.5); opacity: 0;">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 70" style="width: 10%;">
+            <path id="anim-magnifier-path" d="M100 34.55c-5.89,8.04 -11.79,16.09 -20.75,22.73 -35.98,26.65 -86.03,7.92 -78.49,-23.91 6.16,-25.99 36.49,-34.28 62.86,-33.29"
+              style="fill: none;"/>
+          </svg>
+
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 170 170" style="width: 22%; left: 39%; top: 32%;">
+            <path id="anim-circle-gray" d="M85 160c-41.42,0 -75,-33.58 -75,-75 0,-41.42 33.58,-75 75,-75 41.42,0 75,33.58 75,75 0,41.42 -33.58,75 -75,75"
+              style="fill:none; stroke: #ddd; stroke-linecap: round; stroke-linejoin: round; stroke-width: 10px; opacity: 0;" />
+            <path id="anim-circle-pink" d="M85 160c-41.42,0 -75,-33.58 -75,-75 0,-41.42 33.58,-75 75,-75 41.42,0 75,33.58 75,75 0,41.42 -33.58,75 -75,75"
+              style="fill:none; stroke: #ec058c; stroke-linecap: round; stroke-linejoin: round; stroke-width: 10px; opacity: 0;" />
+          </svg>
+
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 178.133 138.434" style="width: 20%; left: 40%; top: 38%;">
+            <path id="anim-check-mark" d="M1204.823,6640.372,1270.179,6698l98.7-126.416" transform="translate(-1197.766 -6564.562)"
+              style="fill:none; stroke: #ec058c; stroke-linecap: round; stroke-linejoin: round; stroke-width: 10px; opacity: 0;" />
+          </svg>
+        </div>
+
+      </div>
+    </div>
+  </main>
+
+  <!-- Bootstrap -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+    crossorigin="anonymous"></script>
+  <!-- AnimeJS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"
+    integrity="sha512-z4OUqw38qNLpn1libAN9BsoDx6nbNFio5lA6CuTp9NlK83b89hgyCVq+N5FdBJptINztxn1Z3SaKSKUS5UP60Q=="
+    crossorigin="anonymous"></script>
+
+  <script src="animation-1.js"></script>
+</body>
+
+</html>
