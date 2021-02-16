@@ -2,64 +2,37 @@
 anime({
   targets: '#anim-pink-wheel',
   easing: 'linear',
-  rotate: 560,
-  duration: 3100
+  rotate: 380,
+  duration: 2500
 })
 
 anime({
   targets: '#anim-gray-wheel',
   easing: 'linear',
-  rotate: -540,
-  duration: 3100
+  rotate: -360,
+  duration: 2500
 })
 
 // graph paper animation
 anime({
   targets: '#anim-graph-1',
   easing: 'easeOutQuad',
-  left: '12%',
-  top: '29%',
+  left: [{value: '12%', easing: 'easeOutSine'}],
+  top: [{value: '29%', easing: 'easeOutSine'}],
   scale: 1,
   duration: 1000,
-  delay: 800
+  delay: 400
 })
 
 anime({
   targets: '#anim-graph-2',
   easing: 'easeOutQuad',
-  left: '65%',
-  top: '5%',
+  left: [{value: '65%', easing: 'easeOutSine'}],
+  top: [{value: '5%', easing: 'easeOutSine'}],
   scale: 1,
   duration: 1000,
-  delay: 1300
+  delay: 800
 })
-
-// circle animation
-anime({
-  targets: ['#anim-circle-pink', '#anim-circle-gray'],
-  easing: 'linear',
-  opacity: [
-    { value: 1, duration: 0 },
-    { value: 0, duration: 250, delay: 2200}
-  ]
-});
-
-anime({
-  targets: '#anim-circle-pink',
-  strokeDashoffset: [anime.setDashoffset, 0],
-  easing: 'linear',
-  duration: 2000
-});
-
-// check mark animation
-anime({
-  targets: '#anim-check-mark',
-  strokeDashoffset: [anime.setDashoffset, 0],
-  easing: 'easeInOutSine',
-  duration: 500,
-  delay: 2600,
-  opacity: [{ value: 1, duration: 0 }]
-});
 
 // magnifier animation
 let magnifierPath = anime.path('#anim-magnifier-path');
@@ -74,6 +47,33 @@ anime({
     { value: 1 }
   ],
   easing: 'easeOutQuad',
-  duration: 1000,
-  delay: 2000
+  duration: 800,
+  delay: 1700
+});
+
+// circle animation
+anime({
+  targets: ['#anim-circle-pink', '#anim-circle-gray'],
+  easing: 'linear',
+  opacity: [
+    { value: 1, duration: 0 },
+    { value: 0, duration: 250, delay: 1750}
+  ]
+});
+
+anime({
+  targets: '#anim-circle-pink',
+  strokeDashoffset: [anime.setDashoffset, 0],
+  easing: 'easeOutSine',
+  duration: 1650
+});
+
+// check mark animation
+anime({
+  targets: '#anim-check-mark',
+  strokeDashoffset: [anime.setDashoffset, 0],
+  easing: 'easeInOutSine',
+  duration: 400,
+  delay: 2100,
+  opacity: [{ value: 1, duration: 0 }]
 });
