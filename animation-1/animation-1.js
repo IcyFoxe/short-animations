@@ -1,16 +1,16 @@
 // cog wheels animation
 anime({
   targets: '#anim-pink-wheel',
-  easing: 'linear',
+  easing: 'cubicBezier(0.8, 0.95, 0.85, 1)',
   rotate: 380,
-  duration: 2500
+  duration: 2600
 })
 
 anime({
   targets: '#anim-gray-wheel',
-  easing: 'linear',
+  easing: 'cubicBezier(0.8, 0.95, 0.85, 1)',
   rotate: -360,
-  duration: 2500
+  duration: 2600
 })
 
 // graph paper animation
